@@ -78,9 +78,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  padding: 1em 0;
+  display: flex;
   z-index: 1000;
   transition: all 0.5s;
-  padding: 22px 0;
   background: rgb(230, 192, 133, 0.6);
 }
 
@@ -256,10 +257,19 @@ h6 {
   color: rgb(17, 17, 17);
 }
 
+.port-desc {
+  background-color: #f3f9fd;
+  width: 40em;
+  padding: 1em;
+  margin: 0.5em auto 2em auto;
+  border-radius: 30px;
+  box-shadow: 5px 5px 29px 0 rgba(0, 0, 0, 0.12);
+}
 #hero h2 {
   color: #333333;
   margin: 1em 0;
   text-align: justify;
+  line-height: 40px;
   text-indent: 30px;
   font-size: 20px;
 }
@@ -366,9 +376,6 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-}
 
 .section-bg {
   background-color: #f7fbfe;
@@ -381,6 +388,7 @@ section {
 
 .section-title h2 {
   font-size: 24px;
+  padding-top: 3em;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -412,12 +420,14 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f3f9fd;
+  background: #d7efff;
   padding: 10px 0;
-  margin: 30px auto 100px;
+  margin: 30px auto 100px 15em;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 5px 5px 29px 0 rgba(0, 0, 0, 0.12);
 }
 .psu-logo {
-  margin: auto 0 auto auto;
+  margin: auto -3.5em auto auto;
 }
 
 .psu-container {
@@ -463,9 +473,34 @@ section {
   font-size: 26px;
 }
 
+.likes {
+  background: #e6f3fd;
+  margin: 30px auto 100px 0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 29px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #84550d;
+  border: 2px solid #84550d;
+}
+
+.btn-get-started:hover {
+  background: #84550d;
+  color: #fff;
+}
+
 .about .content ul {
   list-style: none;
-  padding: 1em 0;
+  padding: 1em 0 1em 5em;
 }
 
 .about .content ul li {
