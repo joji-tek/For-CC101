@@ -78,7 +78,9 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 1em 0;
+  margin: 1em 20em 0 0;
+  padding: 2em 0;
+  border-radius: 0 30px 30px 0;
   display: flex;
   z-index: 1000;
   transition: all 0.5s;
@@ -86,7 +88,9 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgb(230, 192, 133, 1);
+  margin: 1em 19.3em 0 0;
+  border-radius: 0 10px 10px 0;
+  background: rgb(193, 153, 92);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
 }
@@ -283,8 +287,8 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #84550d;
-  border: 2px solid #84550d;
+  color: #c1995c;
+  border: 2px solid #c1995c;
 }
 
 #hero .hero-img {
@@ -293,7 +297,7 @@ h6 {
   align-content: center;
 }
 #hero .btn-get-started:hover {
-  background: #84550d;
+  background: #c1995c;
   color: #fff;
 }
 
@@ -422,8 +426,8 @@ h6 {
 .clients {
   background: #d7efff;
   padding: 10px 0;
-  margin: 30px auto 100px 15em;
-  border-radius: 20px 0 0 20px;
+  margin: 30px auto 100px 20em;
+  border-radius: 30px 0 0 30px;
   box-shadow: 5px 5px 29px 0 rgba(0, 0, 0, 0.12);
 }
 .psu-logo {
@@ -489,12 +493,12 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #84550d;
-  border: 2px solid #84550d;
+  color: #c1995c;
+  border: 2px solid #c1995c;
 }
 
 .btn-get-started:hover {
-  background: #84550d;
+  background: #c1995c;
   color: #fff;
 }
 
