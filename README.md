@@ -2,4 +2,4 @@
 
 I'm tired....
 
-<img src="https://i.imgur.com/ShUXdy4.png" width="100%">
+<img src="https://i.imgur.com/ShUXdy4.png">
