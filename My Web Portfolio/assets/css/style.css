@@ -17,12 +17,13 @@ body {
 }
 
 a {
-  color: #3498db;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: #5faee3;
+  color: #bb7608;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -35,6 +36,9 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.myname {
+  font-weight: bolder;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -45,7 +49,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3498db;
+  background: #e6c085;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -59,7 +63,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #57aae1;
+  background: #84550d;
   color: #fff;
 }
 
@@ -88,6 +92,7 @@ h6 {
 }
 
 #header.header-scrolled {
+  background: rgb(230, 192, 133, 1);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
 }
@@ -218,7 +223,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: rgba(255, 250, 242, 0.95);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -233,7 +238,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #3498db;
+  color: #84550d;
 }
 
 .navbar-mobile .getstarted,
@@ -275,8 +280,8 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #3498db;
-  border: 2px solid #3498db;
+  color: #84550d;
+  border: 2px solid #84550d;
 }
 
 #hero .hero-img {
@@ -285,7 +290,7 @@ h6 {
   align-content: center;
 }
 #hero .btn-get-started:hover {
-  background: #3498db;
+  background: #84550d;
   color: #fff;
 }
 
@@ -370,7 +375,6 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
 }
 
 .section-bg {
@@ -383,7 +387,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -394,8 +398,8 @@ section {
 .section-title h2::after {
   content: "";
   width: 50px;
-  height: 2px;
-  background: #3498db;
+  height: 3px;
+  background: #84550d;
   display: inline-block;
 }
 
@@ -417,9 +421,16 @@ section {
 .clients {
   background: #f3f9fd;
   padding: 10px 0;
-  text-align: center;
+  margin: 30px auto 100px;
+}
+.psu-logo {
+  margin: auto 0 auto auto;
 }
 
+.psu-container {
+  padding: 0 0;
+  margin: auto auto auto 0;
+}
 .clients .col-lg-2 {
   display: flex;
   align-items: center;
@@ -461,7 +472,7 @@ section {
 
 .about .content ul {
   list-style: none;
-  padding: 0;
+  padding: 1em 0;
 }
 
 .about .content ul li {
@@ -477,137 +488,59 @@ section {
   position: absolute;
   left: 0;
   top: 2px;
-  font-size: 20px;
-  color: #3498db;
+  font-size: 1.5rem;
+  color: #84550d;
   line-height: 1;
 }
 
+.perry {
+  height: 40%;
+  width: auto;
+  margin-left: 10em;
+  border-style: solid;
+  border-width: 0.3em;
+  border-color: #e6c085;
+  border-radius: 0.5em;
+  transition: 0.3ms linear;
+}
+.perry:hover {
+  align-self: center;
+  margin-left: 10em;
+  border-style: solid;
+  border-width: 0.3em;
+  border-color: #84550d;
+  border-radius: 1.5em;
+  transition: 0.3ms linear;
+}
 .about .content p:last-child {
+  padding: 1em 1em;
+  border-radius: 2em;
+  text-indent: 30px;
+  background-color: #f3f9fd;
+  box-shadow: 5px 5px 39px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 0;
-}
-
-.about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #3498db;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #3498db;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #3498db;
-  color: #fff;
-  text-decoration: none;
-}
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding-top: 0;
-}
-
-.counts .content {
-  padding: 0;
-}
-
-.counts .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #222222;
-}
-
-.counts .content p {
-  margin-bottom: 0;
-}
-
-.counts .content .count-box {
-  padding: 20px 0;
-  width: 100%;
-}
-
-.counts .content .count-box i {
-  display: block;
-  font-size: 36px;
-  color: #3498db;
-  float: left;
-  line-height: 0;
-}
-
-.counts .content .count-box span {
-  font-size: 36px;
-  line-height: 30px;
-  display: block;
-  font-weight: 700;
-  color: #222222;
-  margin-left: 50px;
-}
-
-.counts .content .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #484848;
-}
-
-.counts .content .count-box a {
-  font-weight: 600;
-  display: block;
   margin-top: 20px;
-  color: #484848;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
+  text-align: justify;
+  line-height: 2em;
 }
-
-.counts .content .count-box a:hover {
-  color: #6f6f6f;
-}
-
-@media (max-width: 1024px) {
-  .counts .image {
-    text-align: center;
-  }
-
-  .counts .image img {
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
-}
-
 /*--------------------------------------------------------------
-# Services
+# skills
 --------------------------------------------------------------*/
-.services .icon-box {
+.skills .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 29px 0 rgba(144, 109, 68, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
 }
 
-.services .icon-box::before {
+.skills .icon-box::before {
   content: "";
   position: absolute;
-  background: #e1f0fa;
+  background: rgba(132, 85, 13, 0.3);
   right: -60px;
   top: -40px;
   width: 100px;
@@ -617,8 +550,8 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
-  background: #3498db;
+.skills .icon-box:hover::before {
+  background: #84550d;
   right: 0;
   top: 0;
   width: 100%;
@@ -626,7 +559,7 @@ section {
   border-radius: 0px;
 }
 
-.services .icon {
+.skills .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
   display: inline-block;
@@ -634,53 +567,54 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #3498db;
+  background: rgba(132, 85, 13, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
-.services .icon i {
+.skills .icon i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
 }
 
-.services .title {
+.skills .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.skills .title a {
   color: #111;
 }
 
-.services .description {
+.skills .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
-.services .icon-box:hover .title a,
-.services .icon-box:hover .description {
+.skills .icon-box:hover .title a,
+.skills .icon-box:hover .description {
   color: #fff;
 }
 
-.services .icon-box:hover .icon {
+.skills .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
-  color: #3498db;
+.skills .icon-box:hover .icon i {
+  color: #84550d;
 }
 
 /*--------------------------------------------------------------
-# More Services
+# More skills
 --------------------------------------------------------------*/
-.more-services {
+.more-skills {
   padding-top: 20px;
 }
 
-.more-services .card {
+.more-skills .card {
   border: 0;
   padding: 160px 20px 20px 20px;
   position: relative;
@@ -690,9 +624,9 @@ section {
   background-position: center center;
 }
 
-.more-services .card-body {
+.more-skills .card-body {
   z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(230, 192, 133, 0.8);
   padding: 15px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
@@ -700,21 +634,21 @@ section {
   border-radius: 5px;
 }
 
-.more-services .card-title {
+.more-skills .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.more-services .card-title a {
+.more-skills .card-title a {
   color: #222222;
 }
 
-.more-services .card-text {
+.more-skills .card-text {
   color: #5e5e5e;
 }
 
-.more-services .read-more a {
+.more-skills .read-more a {
   color: #777777;
   text-transform: uppercase;
   font-weight: 600;
@@ -722,18 +656,18 @@ section {
   transition: 0.4s;
 }
 
-.more-services .read-more a:hover {
+.more-skills .read-more a:hover {
   text-decoration: underline;
 }
 
-.more-services .card:hover .card-body {
-  background: #3498db;
+.more-skills .card:hover .card-body {
+  background: #84550d;
 }
 
-.more-services .card:hover .read-more a,
-.more-services .card:hover .card-title,
-.more-services .card:hover .card-title a,
-.more-services .card:hover .card-text {
+.more-skills .card:hover .read-more a,
+.more-skills .card:hover .card-title,
+.more-skills .card:hover .card-title a,
+.more-skills .card:hover .card-text {
   color: #fff;
 }
 
@@ -1146,7 +1080,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #3498db;
+  color: #84550d;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1155,11 +1089,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #3498db;
+  border: 1px solid #84550d;
 }
 
 .contact .social-links a:hover {
-  background: #3498db;
+  background: #84550d;
   color: #fff;
 }
 
@@ -1169,7 +1103,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #3498db;
+  color: #84550d;
   float: left;
   line-height: 1;
 }
@@ -1236,11 +1170,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #3498db;
+  border-color: #84550d;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #3498db;
+  background: #e6c085;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1249,7 +1183,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #2383c4;
+  background: #84550d;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1299,5 +1233,5 @@ section {
 }
 
 #footer .footer-links a:hover {
-  color: #3498db;
+  color: #bb7608;
 }
