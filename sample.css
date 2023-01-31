@@ -1,0 +1,68 @@
+:root {
+  --black: hsl(0, 100%, 50%);
+  --time: 500ms;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  height: 44px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+#parent {
+  width: 20em;
+  height: 30em;
+  aspect-ratio: 2/1;
+
+  padding: 16px;
+  perspective: 1000px;
+}
+
+#child {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform var(--time);
+
+  border: 1px solid var(--black);
+}
+
+#parent[data-rotate="true"] #child {
+  transform: translate3d(0, 0, -200px) rotate3d(0.1, -0.1, 0.1, 86deg);
+}
+
+.grandChild {
+  width: auto;
+
+  position: absolute;
+  top: 10em;
+  right: 10em;
+
+  border: 1px solid var(--black);
+  transition: transform var(--time);
+}
+
+#parent[data-rotate="true"] .grandChild {
+  transition-delay: var(--time);
+}
+
+#parent[data-rotate="true"] .grandChild:nth-child(2) {
+  transform: translate3d(0, 0, 50px);
+}
+
+#parent[data-rotate="true"] .grandChild:nth-child(3) {
+  transform: translate3d(0, 0, 100px);
+}
