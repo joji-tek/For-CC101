@@ -10,7 +10,7 @@ I'm tired.... time to sleep now...
 
 
 <details> 
-  <summary>--Hover on the ID for something--</summary>
+  <summary>--Hover on the ID to see something--</summary>
    <img src="https://i.imgur.com/a41J7xb.png">
 </details>
 
