@@ -260,3 +260,18 @@
   new PureCounter();
 
 })()
+
+const parent = document.querySelector('#parent');
+
+let isRotate = true;
+
+parent.addEventListener('mouseenter', function() {
+  isRotate = !isRotate;
+  parent.setAttribute('data-rotate', isRotate);
+});
+
+parent.addEventListener('mouseleave', function() {
+  isRotate = !isRotate;
+  parent.setAttribute('data-rotate', isRotate);
+});
+
