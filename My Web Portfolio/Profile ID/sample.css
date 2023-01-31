@@ -10,26 +10,22 @@
   margin: 0;
 }
 
-button {
-  height: 44px;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
 #parent {
-  display: flex;
-  margin-left: 500px;
+  margin-left: 50px;
   padding: 16px;
   perspective: 5000px;
 }
 
 #child {
+  scale: 40%;
+  right: -310px;
+  top: -500px;
   position: absolute;
   perspective: 5000px;
   transform-style: preserve-3d;
   transition: transform var(--time);
-  border: 1px solid var(--black);
 }
+
 /*======My Id======*/
 .psuname {
   top: 40px;
@@ -82,6 +78,7 @@ button {
   z-index: 800;
 }
 .bg_blue {
+  border-radius: 30px 30px 0 0;
   top: 30px;
   left: 0px;
   z-index: 700;
@@ -103,45 +100,45 @@ button {
 /* } */
 
 #parent[data-rotate="true"] .grandChild:nth-child(2) {
-  transform: translate3d(0, 0, 300px);
+  transform: translate3d(0, 450px, 550px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(3) {
-  transform: translate3d(0, 0, 280px);
+  transform: translate3d(0, 300px, 480px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(4) {
-  transform: translate3d(0, 0, 150px);
+  transform: translate3d(-90px, 200px, 350px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(5) {
-  transform: translate3d(0, 0, 80px);
+  transform: translate3d(90px, 50px, 190px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(6) {
-  transform: translate3d(0, 0, 250px);
+  transform: translate3d(90px, -100px, 350px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(7) {
-  transform: translate3d(0, 0, 400px);
+  transform: translate3d(0, 0, 700px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(8) {
-  transform: translate3d(0, 0, 500px);
+  transform: translate3d(0, 80px, 800px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(9) {
-  transform: translate3d(0, 0, 200px);
+  transform: translate3d(0, -150px, 600px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(10) {
-  transform: translate3d(0, 0, 100px);
+  transform: translate3d(100px, 0, 120px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(11) {
-  transform: translate3d(0, 0, 90px);
+  transform: translate3d(-90px, 100px, 280px);
 }
 
 #parent[data-rotate="true"] .grandChild:nth-child(12) {
-  transform: translate3d(0, 0, 100px);
+  transform: translate3d(90px, -80px, 120px);
 }

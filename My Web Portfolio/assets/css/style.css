@@ -292,17 +292,12 @@ h6 {
   border: 2px solid #c1995c;
 }
 
-#hero .hero-img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 #hero .btn-get-started:hover {
   background: #c1995c;
   color: #fff;
 }
 
-#hero .animated {
+#child .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1057,7 +1052,8 @@ h6 {
 #footer {
   background: #fff;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
+  margin-top: 10px;
+  padding: 20px 0;
   color: #222222;
   font-size: 14px;
 }
