@@ -11,16 +11,38 @@
 }
 
 #parent {
-  margin-left: 50px;
-  padding: 16px;
+  animation-name: bob;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -520px;
+  scale: 50%;
+  right: -350px;
+  padding: 10px;
   perspective: 5000px;
+  z-index: 10000;
+}
+
+@media only screen and (max-width: 767px) {
+  #parent {
+    top: -26em;
+  }
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #child {
-  scale: 40%;
-  right: -310px;
-  top: -500px;
-  position: absolute;
+  scale: inherit;
   perspective: 5000px;
   transform-style: preserve-3d;
   transition: transform var(--time);
@@ -49,7 +71,7 @@
 }
 .id_name {
   top: 1180px;
-  left: 8px;
+  left: 10px;
   z-index: 800;
 }
 .id_num {
