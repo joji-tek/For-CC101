@@ -28,6 +28,13 @@
     top: -26em;
   }
 }
+@media only screen and (max-width: 1024px) {
+  #parent {
+    scale: 47%;
+    top: -34em;
+    left: 12em;
+  }
+}
 
 @keyframes bob {
   0% {

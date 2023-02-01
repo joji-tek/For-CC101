@@ -266,9 +266,20 @@ h6 {
     font-size: 2rem;
     line-height: 40px;
     position: relative;
-    top: -7em;
+    top: -8em;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    position: relative;
+    top: -2em;
+    left: -2em;
+  }
+}
+
 .port-desc {
   background-color: #f3f9fd;
   width: 40em;
@@ -284,6 +295,15 @@ h6 {
     top: -14em;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .port-desc {
+    position: relative;
+    width: 60%;
+    left: -13em;
+    top: -3em;
+  }
+}
+
 #hero h2 {
   color: #333333;
   margin: 1em 0;
@@ -294,6 +314,13 @@ h6 {
 }
 
 @media only screen and (max-width: 767px) {
+  #hero h2 {
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   #hero h2 {
     font-size: 20px;
     line-height: 30px;
@@ -323,6 +350,15 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  #hero .btn-get-started {
+    position: relative;
+    top: -4em;
+    left: -4em;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
 #hero .btn-get-started:hover {
   background: #c1995c;
   color: #fff;
