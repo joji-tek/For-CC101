@@ -5,13 +5,13 @@ I'm tired.... time to sleep now...
 
 <details> 
   <summary>--Vanilla Homepage--</summary>
-  <img src="https://i.imgur.com/LF8MSPq.png">
+  <img src="https://i.imgur.com/KaUlyMY.png">
 </details>
 
 
 <details> 
   <summary>--Hover on the ID to see something--</summary>
-   <img src="https://i.imgur.com/a41J7xb.png">
+   <img src="https://i.imgur.com/4UlI3G3.png">
 </details>
 
 <details> 
